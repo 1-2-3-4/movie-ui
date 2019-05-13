@@ -1,0 +1,123 @@
+.heroContainer {
+  display: flex;
+  padding: 30px 20px;
+  border-bottom: solid 1px #4d4d4d
+}
+
+.videoContainer {
+  position: relative;
+}
+
+.videoContainer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.videoContainer::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -25px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #5e5bff;
+}
+
+.heroImage {
+  max-width: 300px;
+}
+
+.detailsContainer {
+  padding: 10px 30px;
+  font-weight: 200;
+}
+
+.description {
+  color: #bababa;
+}
+
+h2 {
+  margin: 0;
+}
+
+.gridContainer {
+  display: flex;
+  padding: 30px 0;
+}
+
+.movieGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.movieContainer {
+  width: 33%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.movieImage {
+  width: 100%;
+}
+
+.movieTitle {
+  text-align: center;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.dropdownContainer {
+  width: 25%;
+  padding: 15px 0;
+}
+
+.selectLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+select {
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  -webkit-appearance: none;
+  padding: 10px;
+  background-color: #4d4d4d;
+  color: #e1dfdc;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.selectContainer {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.selectContainer::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #7879e4;
+}
