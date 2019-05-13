@@ -39,7 +39,7 @@ class Homepage extends React.PureComponent {
     return(
       <div className="homepage-component">
         <div className={ styles.heroContainer }>
-          <div className={ selectedMovie.video ? styles.videoContainer : "imageContainer" }>
+          <div className={ selectedMovie.video ? styles.videoContainer : styles.imageContainer }>
             <img className={ styles.heroImage } src={ IMAGE_PATH + selectedMovie.poster_path } />
           </div>
           <div className={ styles.detailsContainer }>

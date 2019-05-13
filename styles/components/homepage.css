@@ -46,6 +46,7 @@
 
 .description {
   color: #bababa;
+  max-width: 600px;
 }
 
 h2 {
@@ -120,4 +121,36 @@ select {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 8px solid #7879e4;
+}
+
+@media (max-width: 650px) {
+  .heroContainer {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  .imageContainer,
+  .videoContainer {
+    text-align: center;
+  }
+
+  .heroImage {
+    max-width: 150px;
+  }
+
+  .detailsContainer {
+    padding: 10px;
+  }
+
+  .gridContainer {
+    flex-direction: column-reverse;
+  }
+
+  .dropdownContainer {
+    width: 100%;
+  }
+
+  .movieGrid {
+    width: 100%;
+  }
 }
